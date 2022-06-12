@@ -1,0 +1,84 @@
+#main {
+    min-height: 100vh;
+    background-color: var(--main-color);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.mainWrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainWrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 169, 224, 0.52);
+}
+
+.mainInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.mainInfo > h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.mainInfo > h1 > em {
+    font-size: 1.25em;
+}
+
+.mainJoinWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.mainJoin {
+    background-color: var(--main-color);
+    color: white;
+    outline: none;
+    padding: 20px 40px;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 3px 3px var(--main-color-darker);
+    border-radius: 10px;
+    animation: scale 3s infinite alternate-reverse;
+    transition: .3s;
+}
+
+.mainJoin:hover {
+    box-shadow: 0px 0px var(--main-color-darker);
+}
+
+
+@keyframes scale {
+    100% {
+        transform: scale(1.07);
+    }
+}
+
+@media (max-width: 720px) {
+    .mainInfo {
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+.diasporasWrapper {
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.diasporasWrapper > h2 {
+    width: 100%;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.diasporasCountries > p {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.diasporasCountries > ul {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.diasporasCountries li {
+    background-color: var(--main-color);
+    padding: 10px 5px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.diasporasCountries li:hover{
+    background-color: var(--main-color-hover);
+}
+
+.diasporasDescription {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-weight: 500;
+    font-size: 1.1em;
+}

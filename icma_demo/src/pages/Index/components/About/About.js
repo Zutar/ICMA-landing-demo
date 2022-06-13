@@ -1,10 +1,18 @@
 import style from './About.module.css';
 
-
-function About(){
+function About() {
     return (
-        <div>
-            About
+        <div id={'about'}>
+            <div className={style.aboutWrapper}>
+                <h2>ICMA is...</h2>
+                <div className={style.aboutInfo}>
+                    <p>
+                        <strong>ICMA</strong> is an international platform whose participants will be Azerbaijani communities from all over the
+                        world. The ICMA platform is a set of social, business, banking and marketing solutions.
+                    </p>
+                    <hr/>
+                </div>
+            </div>
         </div>
     );
 }

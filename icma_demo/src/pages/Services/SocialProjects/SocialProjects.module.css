@@ -1,0 +1,22 @@
+.socialProjectsWrapper{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.socialProjectsWrapper > h2{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.socialProjectsDescription{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 1.1em;
+}

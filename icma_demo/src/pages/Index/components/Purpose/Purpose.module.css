@@ -1,0 +1,20 @@
+.purposeWrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.purposeInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.purposeInfo p{
+    flex: 1;
+    font-size: 1.2em;
+}

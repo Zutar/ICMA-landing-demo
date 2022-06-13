@@ -1,12 +1,22 @@
 #footer {
+    background-color: var(--main-dark-color);
+}
+
+.footerWrapper {
     padding-top: 20px;
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     display: grid;
-    grid-template: repeat(2, auto) / repeat(2, 1fr);
+    grid-template: repeat(2, auto) / repeat(3, 1fr);
     justify-content: center;
     grid-gap: 10px 0;
-    background-color: var(--main-dark-color);
     color: white;
+}
+
+.footerButtons {
+    display: flex;
+    justify-content: center;
 }
 
 .footerContacts {
@@ -16,8 +26,9 @@
     gap: 10px;
 }
 
-.footerContacts li{
+.footerContacts li {
     padding: 3px;
+    text-align: center;
 }
 
 .footerContacts a {
@@ -31,8 +42,9 @@
     gap: 10px;
 }
 
-.footerNavigation li{
+.footerNavigation li {
     padding: 3px;
+    text-align: center;
 }
 
 .footerNavigation a {
@@ -40,8 +52,18 @@
 }
 
 .footerCopyright {
-    grid-column: span 2;
+    width: 100%;
+    grid-column: span 3;
+    grid-row: 2;
     text-align: center;
     padding: 10px 0;
     border-top: dotted 1px white;
+}
+
+@media (max-width: 720px) {
+    .footerWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
 }

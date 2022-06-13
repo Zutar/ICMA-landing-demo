@@ -1,49 +1,53 @@
 .header {
     width: 100%;
+    height: 70px;
     position: fixed;
     z-index: 1000;
     background-color: white;
+    box-shadow: 0 1px 7px #d2d2d2;
 }
 
-.headerNav{
+.headerNav {
+    width: 100%;
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-}
-
-.headerBrand{
-    display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.headerBrand em{
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 600;
-    color: var(--main-dark-color);
-}
-
-.headerMenu{
+.headerMenu {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.headerMenu a{
+.headerMenu li {
+    min-height: 70px;
+    position: relative;
+}
+
+.headerMenu a {
+    padding: 25px 25px;
     display: block;
     font-weight: 600;
-    padding: 25px 25px;
     color: var(--main-dark-color);
+    text-align: center;
     transition: .3s;
 }
 
-.headerMenu a:hover{
+.headerMenu a:hover {
     background-color: #f6f6f6;
 }
 
-.headerJoinUs{
+.headerMenu li:hover .headerSubMenu {
+    display: block;
+}
+
+.headerJoinUs {
     background-color: var(--main-color);
     color: white !important;
     outline: none;
@@ -56,7 +60,109 @@
     transition: .3s;
 }
 
-.headerJoinUs:hover{
+.headerJoinUs:hover {
     background-color: var(--main-color-hover) !important;
 }
 
+.headerSubMenu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+}
+
+.headerSubMenu a{
+    background-color: white;
+}
+
+.menuToggleButton {
+    width: 50px;
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.menuToggleButton:hover span {
+    background-color: #a9a9a9;
+}
+
+.menuToggleButton span {
+    background-color: gray;
+    width: 50%;
+    margin: 0 auto;
+    height: 2px;
+    transition: .3s;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#menuToggle:checked ~ .headerMenu {
+    display: flex;
+    height: auto;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    height: 100%;
+    padding: 0;
+}
+
+.logo a:hover{
+    background-color: white;
+}
+
+.logo em {
+    justify-self: flex-start;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--main-dark-color);
+}
+
+@media (max-width: 980px) {
+    .logo{
+        margin: 0 auto;
+    }
+
+    .headerMenu {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: scroll;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .menuToggleButton {
+        display: flex;
+    }
+
+    .headerSubMenu {
+        position: initial;
+        display: none;
+        width: 100%;
+    }
+
+    .headerMenu li {
+        min-height: auto;
+    }
+}

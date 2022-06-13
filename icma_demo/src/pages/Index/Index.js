@@ -1,5 +1,5 @@
 import './Index.css';
-import {Main, About, Services, CommunityMap} from './components/index';
+import {Main, About, Services, CommunityMap, Purpose, Partners} from './components/index';
 
 
 function Index(){
@@ -7,8 +7,10 @@ function Index(){
         <div>
             <Main/>
             <About/>
-            <Services/>
             <CommunityMap/>
+            <Services/>
+            <Purpose/>
+            <Partners/>
         </div>
     );
 }

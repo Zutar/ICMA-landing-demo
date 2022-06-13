@@ -1,0 +1,29 @@
+.partners{
+    padding: 25px 0;
+}
+
+.partners h2{
+    width: 100%;
+    text-align: center;
+}
+
+.partners ul{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.partners img{
+    height: 70px;
+    transition: .3s;
+}
+
+.partners img:hover{
+    transform: scale(1.05);
+}

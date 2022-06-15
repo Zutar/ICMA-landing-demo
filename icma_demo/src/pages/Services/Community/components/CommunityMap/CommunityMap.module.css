@@ -1,0 +1,17 @@
+.mapWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapWrapper > h2{
+    text-align: center;
+}
+
+.map{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+    color: var(--main-color);
+}

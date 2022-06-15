@@ -7,3 +7,4 @@ export { default as Events } from "./Services/Events/Events";
 export { default as Diasporas } from "./Services/Diasporas/Diasporas";
 export { default as SocialProjects } from "./Services/SocialProjects/SocialProjects";
 export { default as PublicOrganizations } from "./Services/PublicOrganizations/PublicOrganizations";
+export { default as Community } from "./Services/Community/Community";

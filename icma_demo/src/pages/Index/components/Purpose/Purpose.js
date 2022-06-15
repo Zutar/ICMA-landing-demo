@@ -10,7 +10,7 @@ function Purpose() {
                         coordinate diasporas, search for partners and clients, conduct and increase business, conduct
                         financial settlements, and implement social projects.
                     </p>
-                    <a href={'https://icma_cabinet.grem.capital'}>
+                    <a href={'https://icma-cabinet.grem.capital'}>
                         <PrimaryButton text={'Join Us'}/>
                     </a>
                 </div>

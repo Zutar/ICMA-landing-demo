@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {Index, Error, Contacts, News, ComingSoon, Events, Diasporas, SocialProjects, PublicOrganizations} from './pages/index';
+import {Index, Error, Contacts, News, ComingSoon, Events, Diasporas, SocialProjects, PublicOrganizations, Community} from './pages/index';
 import {Layout} from './components/index';
 
 
@@ -11,7 +11,7 @@ function App() {
                     <Route index element={<Index/>}/>
                     <Route path={'/contacts'} element={<Contacts/>}/>
                     <Route path={'/news'} element={<News/>}/>
-                    <Route path={'/services/community'} element={<ComingSoon/>}/>
+                    <Route path={'/services/community'} element={<Community/>}/>
                     <Route path={'/services/marketplace'} element={<ComingSoon/>}/>
                     <Route path={'/services/business'} element={<ComingSoon text={'Connect your own business to the platform to interact with its members!'}/>}/>
                     <Route path={'/services/banking'} element={<ComingSoon text={'Implementation of an online banking system with the issuance of your own card'}/>}/>

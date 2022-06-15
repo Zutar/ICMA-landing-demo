@@ -69,7 +69,7 @@ function Header() {
                         <Link smooth to={'/contacts'}>Contacts</Link>
                     </li>
                     <li>
-                        <a href={'https://icma_cabinet.grem.capital'} className={style.headerJoinUs}>Join Us</a>
+                        <a href={'https://icma-cabinet.grem.capital'} className={style.headerJoinUs}>Join Us</a>
                     </li>
                 </ul>
 

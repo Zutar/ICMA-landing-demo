@@ -7,7 +7,7 @@ function PublicOrganizations() {
         <div className={style.publicOrganizations}>
             <div className={style.publicOrganizationsWrapper}>
                 <h2>Public organizations</h2>
-                <p className={style.publicOrganizationsDescription}>Launching events and work on the part of a public organization</p>
+                <p className={style.publicOrganizationsDescription}>Listing of Azerbaijani public organizations around the world</p>
                 <PublicOrganizationsMap/>
             </div>
         </div>

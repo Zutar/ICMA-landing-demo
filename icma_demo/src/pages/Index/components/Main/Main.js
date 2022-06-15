@@ -15,7 +15,7 @@ function Main(){
                 <div className={style.mainInfo}>
                     <h1>INTERNATIONAL COMMUNITY <br/><em>“MY AZERBAIJAN”</em></h1>
                     <div className={style.mainJoinWrapper}>
-                        <a href={'https://icma_cabinet.grem.capital'} className={style.mainJoin}>
+                        <a href={'https://icma-cabinet.grem.capital'} className={style.mainJoin}>
                             Join Us
                         </a>
                     </div>

@@ -1,0 +1,46 @@
+.communityWrapper > h3{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.communityList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.communityFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.communityFooter > p {
+    font-size: 1.5em;
+}
+
+.communityFilter {
+    width: 100%;
+    max-width: 1090px;
+    margin: 10px auto;
+    border: solid 1px #a9a9a9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.communityFilterSearch{
+    flex: 1;
+    padding: 12px;
+    font-size: 1.05em;
+}

@@ -7,7 +7,7 @@ function Diasporas() {
         <div className={style.diasporas}>
             <div className={style.diasporasWrapper}>
                 <h2>Diasporas</h2>
-                <p className={style.diasporasDescription}>Uniting platform users into diasporas. View events and activities within the diaspora</p>
+                <p className={style.diasporasDescription}>Listing of Azerbaijani diasporas around the world</p>
                 <div className={style.diasporasCountries}>
                     <p>Diasporas around the world:</p>
                     <ul>

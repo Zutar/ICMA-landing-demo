@@ -8,7 +8,7 @@ function Services(){
             <div className={style.servicesWrapper}>
                 <div className={style.servicesItem}>
                     <h3>Community</h3>
-                    <div className={style.servicesItemInfo}>Unites all members of the diaspora into a global social network. Provides referral and loyalty system</div>
+                    <div className={style.servicesItemInfo}>Unites all members into a global social network. Provides referral and loyalty system</div>
                 </div>
                 <div className={style.servicesItem}>
                     <h3>Marketplace</h3>
@@ -24,11 +24,11 @@ function Services(){
                 </div>
                 <div className={style.servicesItem}>
                     <h3>Public organizations</h3>
-                    <div className={style.servicesItemInfo}>Launching events and work on the part of a public organization</div>
+                    <div className={style.servicesItemInfo}>Listing of Azerbaijani public organizations around the world</div>
                 </div>
                 <div className={style.servicesItem}>
                     <h3>Diasporas</h3>
-                    <div className={style.servicesItemInfo}>Uniting platform users into diasporas. View events and activities within the diaspora</div>
+                    <div className={style.servicesItemInfo}>Listing of Azerbaijani diasporas around the world</div>
                 </div>
                 <div className={style.servicesItem}>
                     <h3>Social projects</h3>

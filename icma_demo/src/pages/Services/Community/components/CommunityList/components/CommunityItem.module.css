@@ -1,0 +1,40 @@
+.communityItem {
+    width: 25%;
+    min-width: 200px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 15px #e7e7e7;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.communityItem:hover{
+    box-shadow: 0 0 25px #d5d5d5;
+}
+
+.communityItemPhotoWrapper {
+    padding: 10px;
+}
+
+.communityItemPhotoWrapper > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.communityItemInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}

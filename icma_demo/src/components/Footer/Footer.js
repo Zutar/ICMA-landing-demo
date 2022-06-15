@@ -8,7 +8,7 @@ function Footer(){
         <footer id={style.footer}>
             <div className={style.footerWrapper}>
                 <div className={style.footerButtons}>
-                    <a href={'https://icma_cabinet.grem.capital'}>
+                    <a href={'https://icma-cabinet.grem.capital'}>
                         <PrimaryButton text={'Join Us'}/>
                     </a>
                 </div>

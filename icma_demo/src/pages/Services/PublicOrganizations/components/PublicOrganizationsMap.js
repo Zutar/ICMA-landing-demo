@@ -1,8 +1,6 @@
 import style from './PublicOrganizations.module.css';
 import {ComposableMap, Geographies, Geography, Marker} from "react-simple-maps";
-
-const geoUrl =
-    "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+import globalMap from '../../../../assets/globalMap.json';
 
 const markers = [
     {
@@ -146,7 +144,7 @@ function PublicOrganizations() {
             <ComposableMap
                 className={style.map}
             >
-                <Geographies geography={geoUrl}>
+                <Geographies geography={globalMap}>
                     {({geographies}) =>
                         geographies.map(geo => (
                             <Geography

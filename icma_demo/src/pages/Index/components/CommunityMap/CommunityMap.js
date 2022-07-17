@@ -2,9 +2,7 @@ import style from './CommunityMap.module.css';
 import {ComposableMap, Geographies, Geography, Marker} from "react-simple-maps";
 import {useState} from "react";
 import ReactTooltip from "react-tooltip";
-
-const geoUrl =
-    "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+import globalMap from '../../../../assets/globalMap.json';
 
 const markers = [
     {
@@ -152,17 +150,6 @@ const markers = [
     */
 ];
 
-const rounded = num => {
-    if (num > 1000000000) {
-        return Math.round(num / 100000000) / 10 + "Bn";
-    } else if (num > 1000000) {
-        return Math.round(num / 100000) / 10 + "M";
-    } else {
-        return Math.round(num / 100) / 10 + "K";
-    }
-};
-
-
 function CommunityMap() {
     const [content, setContent] = useState("");
 
@@ -175,7 +162,7 @@ function CommunityMap() {
                 data-tip=""
                 className={style.map}
             >
-                <Geographies geography={geoUrl}>
+                <Geographies geography={globalMap}>
                     {({geographies}) =>
                         geographies.map(geo => (
                             <Geography

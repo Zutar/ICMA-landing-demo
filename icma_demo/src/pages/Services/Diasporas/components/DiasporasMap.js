@@ -1,8 +1,6 @@
 import style from './DiasporasMap.module.css';
 import {ComposableMap, Geographies, Geography, Marker} from "react-simple-maps";
-
-const geoUrl =
-    "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+import globalMap from '../../../../assets/globalMap.json';
 
 const markers = [
     {coef: 1, markerOffsetX: 0, markerOffsetY: -20, name: "Iran", count: '15-30 mln', coordinates: [51.33844570659985, 35.701095961814694]},
@@ -28,7 +26,7 @@ function DiasporasMap() {
             <ComposableMap
                 className={style.map}
             >
-                <Geographies geography={geoUrl}>
+                <Geographies geography={globalMap}>
                     {({geographies}) =>
                         geographies.map(geo => (
                             <Geography
